@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day Card</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<audio src="1d18.mp3" autoplay loop></audio>
+<link href='https://fonts.googleapis.com/css?family=Solitreo' rel='stylesheet'>
+  <div class="container">
+    <div class="envelope"></div>
+    <div class="card">
+      <h1 class="message">Your hands look sexy<br>Can you choke me? :)<br>Happy Valentine's Day!</h1>
+      <div class="heart"></div>
+    </div>
+    <div class="cover"></div>
+    <div class="lid"></div>
+    <div class="shadow"></div>
+  </div>
+  <!-- Text and Buttons Section -->
+  <div class="text-and-buttons">
+    <p id="additionalText">Will You be My Valentine? Please My Love</p>
+    <button class="btn" id="button1">Yes!</button>
+    <button class="btn" id="button2">No :( </button>
+  </div>
+
+  <script>
+    document.getElementById("button1").onclick = function () {
+      document.getElementById("additionalText").textContent = "YAYY!! We should plan out a date soon right? And so would you like to be called Sweetheart/Baby/Queen/Good Girl? hehe";
+    };
+
+    document.getElementById("button2").onclick = function () {
+      document.getElementById("additionalText").textContent = "Do You really think I'll take a No? Nah please click on Yes and be mine!!!";
+    };
+  </script>
+</body>
+</html>
